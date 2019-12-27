@@ -193,6 +193,10 @@ export const sectionNames = defineMessages({
     defaultMessage: "Site Settings",
     description: "site settings section name"
   },
+  slides: {
+    defaultMessage:"Slides",
+    description:"slides section name"
+  },
   staff: {
     defaultMessage: "Staff Members",
     description: "staff section name"

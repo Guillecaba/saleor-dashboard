@@ -172,7 +172,17 @@ export function createConfigurationMenu(intl: IntlShape): MenuSection[] {
           permission: PermissionEnum.MANAGE_WEBHOOKS,
           title: intl.formatMessage(sectionNames.webhooks),
           url: webhooksListUrl()
+        },
+        {
+          description:intl.formatMessage({
+            defaultMessage:"Manage slides from Homepage"
+          }),
+          icon:<Pages fontSize="inherit" viewBox="0 0 44 44" />,
+          permission:PermissionEnum.MANAGE_SLIDES,
+          title: intl.formatMessage(sectionNames.slides),
+          url:null
         }
+
       ]
     }
   ];

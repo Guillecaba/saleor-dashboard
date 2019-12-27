@@ -161,6 +161,11 @@ const Routes: React.FC = () => {
                 component={CollectionSection}
               />
               <SectionRoute
+                permissions={[PermissionEnum.MANAGE_SLIDES]}
+                path="/slides"
+                component={CustomerSection}
+                />
+              <SectionRoute
                 permissions={[PermissionEnum.MANAGE_USERS]}
                 path="/customers"
                 component={CustomerSection}
@@ -190,6 +195,7 @@ const Routes: React.FC = () => {
                 path="/products"
                 component={ProductSection}
               />
+              
               <SectionRoute
                 permissions={[PermissionEnum.MANAGE_PRODUCTS]}
                 path="/product-types"
